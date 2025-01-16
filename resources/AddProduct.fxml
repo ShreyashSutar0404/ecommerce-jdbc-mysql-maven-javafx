@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.dnyanyog.addproduct.AddProductController">
+   <children>
+      <SplitPane dividerPositions="0.29797979797979796" layoutX="-6.0" layoutY="-6.0" prefHeight="413.0" prefWidth="614.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #2a2e3a;">
+               <children>
+                  <Text fill="#5c95e1" layoutX="33.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add">
+                     <font>
+                        <Font name="System Bold" size="27.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#5c95e1" layoutX="33.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#5c95e1" layoutX="33.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Details :">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="backButton" layoutX="14.0" layoutY="367.0" mnemonicParsing="false" text="Back" onAction ="#backButtonClick"/>
+               </children>
+            </AnchorPane>
+          <AnchorPane fx:id="addProductAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #153969;">
+               <children>
+                  <Label contentDisplay="CENTER" layoutX="110.0" layoutY="42.0" style="-fx-background-color: #718bab;" text=" Enter Product Name :" textFill="WHITE">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="90.0" layoutY="225.0" style="-fx-background-color: #718bab;" text=" Enter Quantity Required :" textFill="WHITE">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" layoutX="152.0" layoutY="135.0" style="-fx-background-color: #718bab;" text=" Enter Price :" textFill="WHITE">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="addProduct" layoutX="107.0" layoutY="78.0" prefHeight="39.0" prefWidth="214.0" style="-fx-background-color: #c0cfe1;" />
+                  <TextField fx:id="price" layoutX="108.0" layoutY="167.0" prefHeight="39.0" prefWidth="214.0" style="-fx-background-color: #c0cfe1;" />
+                  <TextField fx:id="quantity" layoutX="109.0" layoutY="264.0" prefHeight="39.0" prefWidth="214.0" style="-fx-background-color: #c0cfe1;" />
+                  <Button fx:id="addProductButton" layoutX="163.0" layoutY="317.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="101.0" text="Add Product" textFill="#4b4bd3" onAction ="#addButtonClick">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Button>
+                  <Label fx:id="errorLabel" contentDisplay="CENTER" layoutX="12.0" layoutY="371.0" prefHeight="17.0" prefWidth="402.0" textFill="#1dda43" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

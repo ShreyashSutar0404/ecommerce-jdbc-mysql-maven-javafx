@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.dnyanyog.mainscreen.MainScreenController">
+  <items>
+    <AnchorPane fx:id="mainAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #153969;">
+         <children>
+          <AnchorPane fx:id="leftAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="220.0" style="-fx-background-color: #2a2e3a;">
+               <children>
+                  <Label fx:id="eCommerceLabel" layoutX="10.0" layoutY="155.0" text="E-Commerce" textFill="#fcecec">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="30.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <Label fx:id="managementLabel" layoutX="14.0" layoutY="192.0" text="Management" textFill="#e8e6e6">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="backButton" layoutX="14.0" layoutY="359.0" mnemonicParsing="false" text="Back" onAction ="#backButtonClick"/>
+               </children>
+            </AnchorPane>
+            <TextField fx:id="whatToDoTextField" alignment="CENTER" layoutX="230.0" layoutY="47.0" prefHeight="39.0" prefWidth="355.0" style="-fx-background-color: #718bab; -fx-text-fill: #f4f4f4;" text="What would you like to do today?">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Button fx:id="productButton" alignment="CENTER" layoutX="298.0" layoutY="128.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="220.0" style="-fx-background-color: #7f7e7e; -fx-border-color: white;" text="1. Product Management" textFill="WHITE" onAction ="#productButtonClick">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="userButton" alignment="CENTER" layoutX="298.0" layoutY="199.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="220.0" style="-fx-background-color: #7f7e7e; -fx-border-color: white;" text="2. User Management" textFill="WHITE" onAction ="#userButtonClick">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="quitButton" alignment="CENTER" layoutX="298.0" layoutY="272.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="220.0" style="-fx-background-color: #7f7e7e; -fx-border-color: white;" text="3. Quit The Interface" textFill="WHITE" onAction ="#quitButtonClick">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+  </items>
+</SplitPane>
